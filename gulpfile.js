@@ -4,7 +4,6 @@ var jshint = require('gulp-jshint');
 var uglify = require('gulp-uglify');
 var imagemin = require('gulp-imagemin');
 var clean = require('gulp-clean');
-var livereload = require('gulp-livereload');
 var watch = require('gulp-watch');
 var server = require('gulp-express');
 var fs = require('fs');
@@ -45,6 +44,14 @@ gulp.task('clean', function(){
         .pipe(clean());
 });
 
+gulp.task('watch',function(){
+    gulp.watch('./static/styles/*.css',['styles']);
+    gulp.watch('./static/scripts/*.js',['scripts']);
+    gulp.watch('./static/images/*',['images']);
+    gulp.watch('./template/*',['templates']);
+    
+    // gulp.start('lint', 'less', 'scripts', 'images');
+});
 
 gulp.task('default',['clean'],function(){
     server.run(['app.js']);
@@ -52,10 +59,4 @@ gulp.task('default',['clean'],function(){
     gulp.start('watch');
 });
 
-gulp.task('watch',function(){
-    gulp.watch('./static/styles/*.css',['styles']);
-    gulp.watch('./static/scripts/*.js',['scripts']);
-    gulp.watch('./static/images/*',['images']);
-    
-    // gulp.start('lint', 'less', 'scripts', 'images');
-});
+
