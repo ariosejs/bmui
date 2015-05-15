@@ -45,12 +45,12 @@ hr.sub{border-bottom-color:#EDEDED;}
 .price em{color:#E75F44;font-size:.15rem;}
 .price del{color:#888;font-size:.12rem;margin:0 .05rem;}
 .price *:before{content:'￥';}
-.icon{display:inline-block;width:24px;height:24px;background-image:url('../img/icon.png');background-repeat:no-repeat;background-size:100%;}
+.icon{display:inline-block;width:24px;height:24px;background-image:url('../img/_icon.png');background-repeat:no-repeat;background-size:100%;}
 .i-add-cart{background-position:0 -256px;width:32px;height:32px;}
 
 nav.nav-main{box-shadow:0 1px 3px rgba(100,100,100,.3);height:.5rem;padding-top:.05rem;}
 nav.nav-main a{color:#888;position:relative;width:25%;}
-nav.nav-main a:before{content:'\0020';display:block;width:20px;height:20px;background-image:url('../img/icon.png');background-repeat:no-repeat;background-size:100%;margin:0 auto 3px;position:relative;}
+nav.nav-main a:before{content:'\0020';display:block;width:20px;height:20px;background-image:url('../img/_icon.png');background-repeat:no-repeat;background-size:100%;margin:0 auto 3px;position:relative;}
 nav.nav-main a.nav-0:before{background-position:0 0;}
 nav.nav-main a.nav-1:before{background-position:0 -20px;}
 nav.nav-main a.nav-2:before{background-position:0 -40px;}
@@ -61,7 +61,7 @@ nav a:last-child:after{display:none;}
 
 nav.nav-hotNew{height:.34rem;line-height:.34rem;position:relative;margin:.08rem 0;}
 nav.nav-hotNew a{position:relative;width:33%;}
-nav.nav-hotNew a:before{content:'\0020';display:inline-block;width:24px;height:24px;background-image:url('../img/icon.png');background-repeat:no-repeat;background-size:100%;position:relative;vertical-align:middle;margin:-.02rem .05rem 0 0;}
+nav.nav-hotNew a:before{content:'\0020';display:inline-block;width:24px;height:24px;background-image:url('../img/_icon.png');background-repeat:no-repeat;background-size:100%;position:relative;vertical-align:middle;margin:-.02rem .05rem 0 0;}
 nav.nav-hotNew a.nav-10:before{background-position:0 -120px;}
 nav.nav-hotNew a.nav-11:before{background-position:0 -144px;}
 nav.nav-hotNew a.nav-12:before{background-position:0 -168px;}

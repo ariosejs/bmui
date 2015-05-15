@@ -86,7 +86,7 @@ body.dialogShow{overflow:hidden;padding-right:15px}
 .testReportList-page{text-align:center;position:absolute;width:600px;bottom:-8px;left:50%;margin-left:-300px;opacity:0}
 .testReportList-page i{display:inline-block;*display:inline;*zoom:1;width:8px;height:8px;overflow:hidden;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;background:#ccc;margin:3px}
 .testReportList-page i.on{background:#2bbc69}
-.icon{display:inline-block;*display:inline;*zoom:1;width:16px;height:16px;background-image:url(../img/icon2x.png);background-repeat:no-repeat}
+.icon{display:inline-block;*display:inline;*zoom:1;width:16px;height:16px;background-image:url(../img/icon.png);background-repeat:no-repeat}
 .i-prev{background-position:-50px -50px}
 .i-next{background-position:-50px -2px}
 .i-prev-disabled{background-position:-98px -51px;cursor:default}
@@ -114,12 +114,23 @@ body.dialogShow{overflow:hidden;padding-right:15px}
 
 .tabs-micro{font-size:13px;overflow:hidden;}
 .tabs-micro li{display:inline-block;*display:inline;*zoom:1;background:none;height:14px;line-height:14px;width:auto;padding:0 22px 0 20px;border-left:2px solid #eee;margin-left:-2px;}
-.tabs-micro li a{color:#33495f;}
+.tabs-micro li a{color:#33495f;padding:1px 3px;}
 .tabs-micro li.on{background:none;}
 .tabs-micro li.on a{font-size:14px;border-bottom:2px solid #2bbc69;padding:0 5px 5px;margin:0 -5px;}
 
+label.checkbox,label.radiobox{display:inline-block;*display:inline;*zoom:1;}
+label.checkbox input,label.radiobox input{display:none;}
+label.checkbox{padding-left:25px;background:url(../img/icon.png) -180px 0 no-repeat;}
+label.checkbox.checked{background:url(../img/icon.png) -180px -40px no-repeat;}
+label.radiobox{padding-left:25px;background:url(../img/icon.png) -180px -80px no-repeat;}
+label.radiobox.checked{background:url(../img/icon.png) -180px -120px no-repeat;}
 
-
+input.text{width:auto;height:20px;padding:10px 15px;font-size:14px;border:1px solid #c3c8cc;border-radius:2px;}
+input.text-l{width:330px;}
+input.text-m{width:200px;}
+input.text-s{width:60px;}
+input.text-done{border-color:#2bbc69;color:#2bbc69;}
+input.text-err{border-color:#e94d3c;color:#e94d3c;}
 
 
 

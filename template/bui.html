@@ -1,15 +1,15 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <title>ChunBo UI</title>
-        <link rel="stylesheet" href="css/bui.css" type="text/css" media="screen">
-        <style>
-			dt.demo{padding:5px 10px;background:#777;color:#fff;font-size:18px;}
+	<head>
+		<meta charset="utf-8" />
+		<title>ChunBo UI</title>
+		<link rel="stylesheet" href="css/bui.css" type="text/css" media="screen">
+		<style>
+			dt.demo{padding:5px 10px;background:#666;color:#fff;font-size:18px;}
 			dd.demo{padding:10px;}
-        </style>
-    </head>
-    <body class="demo">
+		</style>
+	</head>
+	<body class="demo">
 		<dl class="demo">
 			<dt class="demo">Button Type</dt>
 			<dd class="demo">
@@ -76,19 +76,74 @@
 					<li><a href="#">用密码找回</a><i></i></li>
 				</ul>
 			</dd>
-			<dt class="demo">Checkbox & Radio</dt>
+			<dt class="demo">Form</dt>
 			<dd class="demo">
-				<label for="c01" class="checkbox"><input type="checkbox" id="c01" name="">Checked</label>
-				<label for="r01" class="radiobox"><input type="radio" id="r01" name="r00">radio 1</label>
-				<label for="r02" class="radiobox"><input type="radio" id="r02" name="r00">radio 2</label>
+				<h4>input</h4>
+				<input type="text" class="text text-l" placeholder="提示"><br><br>
+				<input type="text" class="text text-m" placeholder="提示"><br><br>
+				<input type="text" class="text text-s" placeholder="提示"><br><br>
+				<input type="text" class="text text-done" placeholder="提示" value="成功"><br><br>
+				<input type="text" class="text text-err" placeholder="提示" value="失败"><br><br>
+				<h4>checkbox</h4>
+				<label for="c01" class="checkbox"><input type="checkbox" id="c01" name="" checked="checked">Checked</label>
+				<label for="c02" class="checkbox"><input type="checkbox" id="c02" name="">Checked</label><br><br>
+				<h4>radiobox</h4>
+				<label for="r01" class="radiobox"><input type="radio" id="r01" name="r00" value="0" checked="checked">radio 1</label>
+				<label for="r02" class="radiobox"><input type="radio" id="r02" name="r00" value="1">radio 2</label>
+				<label for="r03" class="radiobox"><input type="radio" id="r03" name="r00" value="2">radio 3</label><br><br>
+			</dd>
+			<dt class="demo"></dt>
+			<dd class="demo"></dd>
+			<dt class="demo">Tips</dt>
+			<dd class="demo">
+				<a href="javascript:;" class="tips" title="这里 tips">small</a>  <a href="javascript:;" class="tips" title="这里是个tips这里是个tips这里是个tips这里是个tips">tips</a> <a href="javascript:;" class="tips" title="">null</a>
+			</dd>
+			<dt class="demo">Dialog</dt>
+			<dd class="demo">
+				<a href="#" class="btn btn-main act-dialog-def">default</a>
+				<a href="#" class="btn btn-main act-dialog">option</a>
+				<a href="#" class="act-dialog-focus btn btn-hot" focus-data="http://i1.chunboimg.com/group1/M00/00/7E/Cv4IbFTZnomAO0psAARScKU3pKI08..jpg;http://i0.chunboimg.com/group1/M00/00/7E/Cv4IdVTZnqCAPIldAAT-gRpQRVE26..jpg;http://i1.chunboimg.com/group1/M00/00/7E/Cv4IbFTZnoqALfJ_AAU24kFSXTA61..jpg;http://i1.chunboimg.com/group1/M00/00/7E/Cv4IdVTZnqGADG5LAAUs5NB0-YQ13..jpg;http://i0.chunboimg.com/group1/M00/00/7E/Cv4IbFTZnouAWJuDAAVlxJWw_1g51..jpg;http://i0.chunboimg.com/group1/M00/00/7E/Cv4IdVTZnqKAclKrAAV6SQlI-qc71..jpg;http://i1.chunboimg.com/group1/M00/00/7E/Cv4IbFTZnoyACTWWAAV7OyEdcRo80..jpg;http://i1.chunboimg.com/group1/M00/00/7E/Cv4IdVTZnqOAAGZkAAWAi1oYko073..jpg;http://i1.chunboimg.com/group1/M00/00/7E/Cv4IbFTZno2AE4Y0AAWBS0k2vGQ22..jpg;http://i1.chunboimg.com/group1/M00/00/7E/Cv4IdVTZnqSAInClAAWKCvyxPqQ35..jpg;http://i1.chunboimg.com/group1/M00/00/7E/Cv4IbFTZno2AI_hYAATdsHj4Rcg50..jpg">textReport1</a>
+
+				<a href="#" class="act-dialog-focus btn btn-hot" focus-data="http://i1.chunboimg.com/group1/M00/00/85/Cv4IdVTasw-AN5KWAAWqHBWm8gQ42..jpg;http://i1.chunboimg.com/group1/M00/00/85/Cv4IbFTasvmAWeJYAAXQtKuQBZo28..jpg;http://i1.chunboimg.com/group1/M00/00/85/Cv4IdVTasxCAB6inAAbX5r1RlbU80..jpg;http://i1.chunboimg.com/group1/M00/00/85/Cv4IbFTasvqAMZ-hAAaU8Pb4Tsg27..jpg;http://i0.chunboimg.com/group1/M00/00/85/Cv4IdVTasxGAYNnAAAYz_EvR2gA05..jpg">textReport2</a>
+				<a href="#" class="act-dialog-imgview btn btn-main" img-data="http://i0.chunboimg.com/group1/M00/00/7E/Cv4IdVTZoSqAEgn1AAHeh_8laio864.jpg;http://i1.chunboimg.com/group1/M00/00/7E/Cv4IbFTZoQuAGyGZAAJB64a1B6g418.jpg;http://i1.chunboimg.com/group1/M00/00/7E/Cv4IbFTZoSWAM2vIAAKrTZYrmHI269.jpg;http://i0.chunboimg.com/group1/M00/00/6D/Cv4IdVTQTDiAWljqAADg5YwDok8390.jpg">imgView</a>
 			</dd>
 			<dt class="demo"></dt>
 			<dd class="demo"></dd>
 			<dt class="demo"></dt>
 			<dd class="demo"></dd>
 		</dl>
-    </body>
-    <script type="text/javascript" src="js/common.js"></script>
-    <script type="text/javascript" src="js/bui.js"></script>
+	</body>
+	<script type="text/javascript" src="js/lib.js"></script>
+	<script type="text/javascript" src="js/bui.js"></script>
+	<script>
+		(function(){
+			$('.demo a').on('click',function(e){
+				e.preventDefault();
+			});
+		})();
+		
+		$('.act-dialog').on('click',function(){
+			$.dialog({width:200,height:140,maskLayer:0.3,close:false,title:'Title',content:'ariose<br><div class="dialog-foot"></div>'});
+		});
+		$('.act-dialog-def').on('click',function(){
+			$.dialog();
+		});
+		$('.act-dialog-url').on('click',function(){
+			$.dialog({width:800,height:600,url:'http://www.chunbo.com/'});
+		});
+		$('.act-dialog-focus').on('click',function(){
+			var data = $(this).attr('focus-data').split(';');
+			$.dialog({focus:true,data:data});
+		});
+
+		$('.act-dialog-imgview').on('click',function(){
+			var data = $(this).attr('img-data').split(';');
+			$.dialog({imgView:true,data:data,close:false});
+		});
+		
+
+
+
+</script>
 </html>
 
