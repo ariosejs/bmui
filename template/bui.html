@@ -44,13 +44,24 @@
 			</dd>
 			<dt class="demo">paginator</dt>
 			<dd class="demo">
-				<div class="paginator">
-					<a href="#" class="prev">&laquo;&nbsp;上一页</a>
+				<div class="paginator paginator">
+					<a href="#" class="prev disable">&laquo;&nbsp;上一页</a>
 					<a href="#" class="on">1</a>
 					<a href="#">2</a>
 					<a href="#">3</a>
 					<a href="#">4</a>
 					<a href="#">5</a>
+					<a href="#" class="next">下一页&nbsp;&raquo;</a>
+				</div>
+				<div class="paginator paginator-right">
+					<a href="#" class="prev">&laquo;&nbsp;上一页</a>
+					<a href="#">1</a>
+					<a href="#">2</a>
+					<a href="#" class="on">3</a>
+					<a href="#">4</a>
+					<a href="#">5</a>
+					<span>…</span>
+					<a href="#">9</a>
 					<a href="#" class="next">下一页&nbsp;&raquo;</a>
 				</div>
 			</dd>
@@ -114,8 +125,16 @@
 						<ul class="top-nav">
 							<li class="top-nav-reg line-right"><a href="#">注册</a></li>
 							<li class="top-nav-login line-right"><a href="#">登录</a></li>
-							<li class="top-nav-mychunbo dropDown"><a href="#">我的春播<i class="i-arr-down"></i></a><div class="dropDown-menu" id="xx">1</div></li>
-							<li class="top-nav-cart dropDown"><i class="icon i-cart"></i>我的购物车<i class="num">4</i><div class="dropDown-menu" id="yy">2</div></li>
+							<li class="top-nav-mychunbo dropDown dropDown-right dropDown-3"><a href="#">我的春播<i class="i-arr-down"></i></a><div class="dropDown-menu" id="xx"><ul>
+                                    <li><a href="/Member/index.html">我的春播</a></li>
+                                    <li><a href="/OrderInfo/index.html">我的订单</a></li>
+                                    <li><a href="/Invitation/index.html">分享基金</a></li>
+                                    <li><a href="/Favorite/index.html">我的心愿单</a></li>
+                                    <li><a href="/Giftcard/index.html">我的春播卡</a></li>
+                                    <li><a href="/Coupons/index.html">我的春播券</a></li>
+                                    <li><a href="/Points/index.html">我的积分</a></li>
+                                    <li><a href="/Login/logout.html" class="green_a" id="logout">退出</a></li>                                </ul></div></li>
+							<li class="top-nav-cart dropDown dropDown-left"><i class="icon i-cart"></i>我的购物车<i class="num">4</i><div class="dropDown-menu" id="yy">2</div></li>
 						</ul>
 					</div>
 					<div class="header-nav">
@@ -179,7 +198,7 @@
 								<p><a href="/HelpCenter/index/content_id/44" target="_blank">退款方式时间</a></p>
 								<p><a href="/HelpCenter/index/content_id/65" target="_blank">关于发票</a></p>
 							</li>
-							<li class="li-l">
+							<li class="li-m">
 								<h5>售后服务</h5>
 								<p><a href="/HelpCenter/index/content_id/48" target="_blank">退换货政策</a></p>
 								<p><a href="/HelpCenter/index/content_id/49" target="_blank">联系客服</a></p>
